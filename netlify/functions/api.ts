@@ -5,6 +5,7 @@ const api = express();
 
 const router = Router();
 router.get("/hello", (req, res) => res.send("Hello World!"));
+// api.use('/.netlify/functions/api', router);
 
 api.use("/api/", router);
 
